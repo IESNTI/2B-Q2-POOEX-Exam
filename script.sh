@@ -29,6 +29,9 @@ while getopts ":f:d:a:e:" opts; do
                 ;;
             esac
         ;;
+        \?) echo "L'option -$OPTARG n'existe pas."
+            exit 2
+        ;;
     esac
 done
 
